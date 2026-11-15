@@ -1,0 +1,23 @@
+# Lecture 02: File System vs. DBMS — Conceptual Quiz
+
+### Q1. Metadata vs. Attribute Search
+**Question:** A bank stores customer records in `branch_mangaluru.txt` and `branch_udupi.txt`. Why does finding *"all customers with a balance over ₹50,000"* highlight the difference between file metadata access and attribute-based access?
+* **Answer:** In a file system, searches rely on **file metadata** (file name, folder path, modified date), forcing manual opening and scanning of every branch file to filter and merge results. In a DBMS, queries filter directly by **attributes** (`WHERE balance > 50000`), retrieving matching records across all branches simultaneously.
+
+---
+
+### Q2. The Domino Effect of Redundancy
+**Question:** If a student's address is duplicated across Library, Hostel, and Exam Cell files and only the Hostel file is updated when they move, what specific problem occurs?
+* **Answer:** **Data Inconsistency** — different files hold conflicting versions of the same student's address.
+
+---
+
+### Q3. Concurrency Control
+**Question:** Two users try to book the last remaining IRCTC train ticket at the exact same millisecond. What goes wrong in a traditional file system, and what DBMS mechanism prevents double-booking?
+* **Answer:** In a file system, simultaneous access causes race conditions and data overwrites where both users may receive a confirmed booking. A DBMS prevents this using **Concurrency Control** mechanisms such as **Locking protocols** (exclusive locks on the seat row) and **Timestamp Ordering**, ensuring only the first transaction secures the ticket.
+
+---
+
+### Q4. Role-Based Access Control (RBAC)
+**Question:** How does a DBMS enforce different permissions for Students (`Read`), Faculty (`Create/Update`), and the Exam Controller (`Delete`) compared to shared spreadsheets?
+* **Answer:** Unlike file systems that only offer coarse file-level permissions, a DBMS enforces **Role-Based Access Control (RBAC)** using **DCL (`GRANT`/`REVOKE`)** and **Views**, restricting specific CRUD privileges per role down to specific tables, rows, and columns.
