@@ -11,6 +11,8 @@ DBMS/
 ├── 01-notes/                       # Concise Markdown notes synchronized with my physical notebook
 ├── 02-quiz-questions/              # GATE-style conceptual & theoretical quiz answers
 └── 03-applications-and-snippets/   # Hands-on SQL scripts, mini-schemas, and scenario drills
+---
+```
 
 ## Syllabus & Progress Tracker
 
