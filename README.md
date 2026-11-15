@@ -18,7 +18,7 @@ DBMS/
 
 | # | Topic | Notes | Quiz | Application / SQL |
 | :---: | :--- | :---: | :---: | :---: |
-| 01 | Introduction to DBMS (Structured vs. Unstructured, CRUD) | ✅ | ⬜ | ⬜ |
+| 01 | Introduction to DBMS (Structured vs. Unstructured, CRUD) | ✅ | ✅ | ⬜ |
 | 02 | File System vs. DBMS | ⬜ | ⬜ | ⬜ |
 | 03 | DBMS Architecture (1-Tier, 2-Tier, 3-Tier & Data Independence) | ⬜ | ⬜ | ⬜ |
 | 04 | ER Model (Entities, Attributes, Relationships, Cardinality) | ⬜ | ⬜ | ⬜ |
